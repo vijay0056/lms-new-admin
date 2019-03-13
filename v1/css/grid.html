@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style>
+
+.main-row{
+	display:table;
+	width: 100%;
+	background-color:#666;
+}
+
+body {
+  margin: 0;
+}
+ul {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  
+  /* boring properties: */
+  list-style: none;
+  
+  margin: 4vh auto;
+  
+  padding: 1rem;
+  overflow: auto;
+  counter-reset: item;
+}
+li {
+  position: relative;
+}
+li:after {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  padding: 0.2rem 0.6rem;
+  background: salmon;
+  color: white;
+  left:0;
+  top:0;
+}
+img {
+  outline: 5px solid salmon;
+}
+li:nth-child(1),
+li:nth-child(3),
+li:nth-child(5),
+li:nth-child(8),
+li:nth-child(9),
+li:nth-child(10),
+li:nth-child(12)
+{
+  grid-row: span 2;
+}
+</style>
+<body>
+<div class="main-row">
+	<!--<div class="one fl">1</div>
+    <div class="two fl">2</div>
+    <div class="three fl">3</div>
+    <div class="four fl">4</div>
+    <div class="five fl">5</div>-->
+  <ul>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+  <li>test 1</li>
+</ul>
+</div>
+</body>
+</html>
