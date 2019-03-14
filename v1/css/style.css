@@ -777,9 +777,10 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .card{
 	border: 0 !important;
 }
-.form-label-group label span{
+/*.form-label-group label span{
 	background-color:#FFF;
-}
+}*/
 .form-group {
     margin-bottom: 1.7rem;
 }
+.form-label-group input:not(:placeholder-shown) ~ label span{ background-color: #fff; padding:0 2px;}
