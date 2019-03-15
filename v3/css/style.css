@@ -783,4 +783,4 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .form-group {
     margin-bottom: 1.7rem;
 }
-.form-label-group input:not(:placeholder-shown) ~ label span{ background-color: #fff; padding:0 2px;}
+/*.form-label-group input:not(:placeholder-shown) ~ label span{ background-color: #fff; padding:0 2px;}*/
