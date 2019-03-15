@@ -33,7 +33,7 @@
 	  margin: 0;
 	  font-family: 'Roboto', sans-serif;
 	  color: #32323c;
-	  font-size: 1rem;
+	  font-size: 14px;
 	  font-weight: 400;
 	  line-height: 1.5;
 	  text-align: left;
@@ -781,6 +781,10 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 	background-color:#FFF;
 }*/
 .form-group {
-    margin-bottom: 1.7rem;
+    margin-bottom: 0.4rem;
+	
+}
+.dropdown-item{
+	font-size: 12px;
 }
 /*.form-label-group input:not(:placeholder-shown) ~ label span{ background-color: #fff; padding:0 2px;}*/
