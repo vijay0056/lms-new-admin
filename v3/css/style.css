@@ -924,3 +924,29 @@ cursor:pointer;}
 	margin-top:0px;
 }
 }
+.table-action-edit{
+	float:left;
+}
+
+.table-action-delete{
+	float:right;
+	color: #dc3545;
+}
+.action-global{
+	    min-width: 40px;
+}
+.action-global i {
+    float: right;
+    background-color: #007bff;
+    padding: 0.2rem;
+    color: #fff;
+    font-size: 0.5rem;
+    margin-top: 4px;
+	    margin-left: 10px;
+}
+.table-action-delete i{
+	 background-color: #dc3545;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 18px 0 0 0 !important;}
