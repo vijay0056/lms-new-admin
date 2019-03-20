@@ -5,8 +5,14 @@
   $("#sidebarToggle").on('click', function(e) {
     e.preventDefault();
     $("body").toggleClass("sidebar-toggled");
-    $(".sidebar").toggleClass("toggled");
+    $(".filterbar").toggleClass("toggled");
+	
   });
+  $(".cls").on('click', function(e){
+	  
+	  $(".filterbar").toggleClass("toggled");
+	  
+	  });
 
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
@@ -40,6 +46,25 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-  $('#dataTable').DataTable();
+ // $('#dataTable').DataTable();
 });
+
+$(document).ready(function() {
+    var table = $('#dataTable').removeAttr('width').DataTable( {
+      scrollY:        true,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         true,
+        columnDefs: [
+            { "width": "16.66%", "targets": 0 },
+      { "width": "16.66%", "targets": 1 },
+      { "width": "16.66%", "targets": 2 },
+      { "width": "16.66%", "targets": 3 },
+      { "width": "16.66%", "targets": 4 },
+      { "width": "16.66%", "targets": 5 }
+        ],
+        fixedColumns: true,
+		
+    } );
+} );
 
