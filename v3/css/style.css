@@ -897,3 +897,30 @@ cursor:pointer;}
 	background-color: #f5f5f5;
 	color: #32323c;
 }
+.sidebar {
+    width: 100% !important;
+    background-color: #fff;
+    min-height: calc(100vh - 56px);
+	webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+@media(min-width:769px){
+#sidebarToggle{
+	display:none;
+}
+
+}
+@media (max-width: 768px) {
+#wrapper #content-wrapper{
+	padding-top: 0.1rem !important;
+}
+.main-content-sec {
+    padding: 0px 0.1rem;
+}
+.filterbar{
+	margin-top:0px;
+}
+}

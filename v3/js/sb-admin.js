@@ -2,9 +2,9 @@
   "use strict"; // Start of use strict
 
   // Toggle the side navigation
-  $("#sidebarToggle").on('click', function(e) {
+  $("#filterToggle").on('click', function(e) {
     e.preventDefault();
-    $("body").toggleClass("sidebar-toggled");
+    $("body").toggleClass("filterbar-toggled");
     $(".filterbar").toggleClass("toggled");
 	
   });
@@ -13,6 +13,14 @@
 	  $(".filterbar").toggleClass("toggled");
 	  
 	  });
+	  
+$("#sidebarToggle").on('click', function(e) {
+    e.preventDefault();
+    $("body").toggleClass("sidebar-toggled");
+    $(".sidebar").toggleClass("toggled");
+	$("#sidebarToggle i").toggleClass("fa-times");
+	
+  });
 
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {

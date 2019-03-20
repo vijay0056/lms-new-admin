@@ -110,9 +110,11 @@ body {
 }
 
 .sidebar {
-  width: 90px !important;
+  
   background-color: #fff;
   min-height: calc(100vh - 56px);
+      width: 0 !important;
+    overflow: hidden;
 }
 
 .sidebar .nav-item:last-child {
@@ -120,9 +122,9 @@ body {
 }
 
 .sidebar .nav-item .nav-link {
-  text-align: center;
+  text-align: left;
   padding: 0.75rem 1rem;
-  width: 90px;
+ 
 }
 .sidebar .nav-item.active{
 	    border-left: 4px solid #ffd938;
@@ -138,7 +140,7 @@ body {
 }
 
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  font-size: 14px;
   display: block;
   color: #32323c !important;
 }
@@ -169,13 +171,13 @@ body {
 }
 
 .sidebar.toggled {
-  width: 0 !important;
+  width: 100% !important;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sidebar {
-    width: 225px !important;
+    width: 275px !important;
   }
   .sidebar .nav-item .nav-link {
     display: block;
