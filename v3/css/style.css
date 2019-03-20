@@ -841,7 +841,7 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .card-header .inner-header{
 	    display: table;
     width: 100%;
-    padding: 0 10px 0 0;
+    padding: 0 0px 0 0;
     border-bottom: 1px solid #dee2e6;
 }
 .inner-header .fl_in_h{
