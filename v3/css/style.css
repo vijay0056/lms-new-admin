@@ -932,6 +932,9 @@ cursor:pointer;}
 	float:right;
 	color: #dc3545;
 }
+.table-action-delete:hover{
+	color: #dc3545;
+}
 .action-global{
 	    min-width: 40px;
 }
